@@ -1,0 +1,94 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+
+    <div class=w3-center>
+        <b><h1 class="w3-xxxlarge">Cryptocurrencies</h1></b> 
+          <img style="-webkit-user-select: none;background-position: 0px 0px, 0px 0px;background-size: 0px 0px;background-image:linear-gradient(45deg, #eee 25%, transparent 25%, transparent 75%, #eee 75%, #eee 100%),linear-gradient(45deg, #eee 25%, white 25%, white 75%, #eee 75%, #eee 100%);" src="https://d13yacurqjgara.cloudfront.net/users/37530/screenshots/2937858/drib_blink_bot.gif" width="220" height="150">
+         </div>
+        
+
+            
+<!-- Navigation Bar -->
+    <!-- <div class="w3-container">-->
+        <div class="w3-bar w3-theme">
+          <a href="#" class="w3-bar-item w3-button w3-padding-16">Home</a>
+          <a routerLink="/user-profile" routerLinkActive="active"class="w3-bar-item w3-button w3-padding-16">User Profile</a>
+          <a routerLink="/current-cryptos" routerLinkActive="active" class="w3-bar-item w3-button w3-padding-16">Cryptocurrencies Values</a>
+          <a routerLink="/contact" routerLinkActive="active" class="w3-bar-item w3-button w3-padding-16">Contact</a>
+          <a routerLink="/chatbot" routerLinkActive="active" class="w3-bar-item w3-button w3-padding-16">Chatbot</a>
+          <a routerLink="/settings" routerLinkActive="active" class="w3-bar-item w3-button w3-padding-16">Settings</a>
+          <a class="w3-bar-item w3-button w3-right" [routerLink]="['/login']">Logout</a>
+          <router-outlet></router-outlet>
+        </div>
+
+
+<div class="w3-row" id="contact">
+<div class="w3-full w3-indigo w3-container" style="min-height:800px">
+  <div class="w3-padding-64 w3-center">
+<h2>Cryptocurrency Values</h2>
+<p>as of</p>
+<app-date-obj></app-date-obj>
+<div class="w3-container w3-responsive">
+  <table class="w3-table">
+    <tr>
+      <th>Company</th>
+      <th>Value</th>
+      <th>Flex</th>
+    </tr>
+    <tr class="w3-white">
+      <td>Bitcoin</td>
+      <td>$7,039.00</td>
+      <td>(-0.49%)</td>
+       <td>
+          <a href="/currencies/bitcoin/#charts"><img class="sparkline" alt="sparkline" src="https://files.coinmarketcap.com/generated/sparklines/1.png"></a>
+       </td>
+    </tr>
+    <tr class="w3-white">
+      <td>Ethereum</td>
+      <td>$263.89</td>
+      <td>(-23%)</td>
+     <td>
+       <a href="/currencies/ethereum/#charts"><img class="sparkline" alt="sparkline" src="https://files.coinmarketcap.com/generated/sparklines/1027.png"></a>
+      </td> 
+    </tr>
+    <tr class="w3-white">
+      <td>Bitcoin Cash</td>
+      <td>$636.78</td>
+      <td>3.18%</td>
+      <td>
+          <a href="/currencies/bitcoin-cash/#charts"><img class="sparkline" alt="sparkline" src="https://files.coinmarketcap.com/generated/sparklines/1831.png"></a>
+      </td>
+    </tr>
+    <tr class="w3-white">
+      <td>QTUM</td>
+      <td>$11.19</td>
+      <td>2.95%</td>
+      <td>
+      <a href="/currencies/qtum/#charts"><img class="sparkline" alt="sparkline" src="https://files.coinmarketcap.com/generated/sparklines/1684.png"></a>
+      </td>
+    </tr>
+    <tr class="w3-white">
+      <td>LTC</td>
+      <td>$62.51</td>
+      <td>1.26%</td>
+      <td>
+          <a href="/currencies/litecoin/#charts"><img class="sparkline" alt="sparkline" src="https://files.coinmarketcap.com/generated/sparklines/2.png"></a>
+      </td>
+    </tr>
+    <tr class="w3-white">
+      <td>Dash</td>
+      <td>$309.49</td>
+      <td>6.76%</td>
+      <td></td>
+    </tr>
+  </table>
+</div>
+
+   
+  </div>
+</div>
+
+</div>

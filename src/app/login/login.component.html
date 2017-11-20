@@ -1,0 +1,46 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+
+<div class="w3-center w3-container login">
+    <b><h1 class="w3-xxxlarge">Cryptocurrencies</h1></b> 
+      <img style="-webkit-user-select: none;background-position: 0px 0px, 0px 0px;background-size: 0px 0px;background-image:linear-gradient(45deg, #eee 25%, transparent 25%, transparent 75%, #eee 75%, #eee 100%),linear-gradient(45deg, #eee 25%, white 25%, white 75%, #eee 75%, #eee 100%);" src="https://d13yacurqjgara.cloudfront.net/users/37530/screenshots/2937858/drib_blink_bot.gif" width="220" height="150">
+     <br>
+    <button class="w3-btn w3-xlarge w3-dark-grey w3-hover-light-grey" onclick="document.getElementById('loginModal').style.display='block'" style="font-weight:900;">Login</button>
+    <br>
+    <div id="loginModal" class="w3-modal">
+      <div class="login col-md-6 col-md-offset-3">
+        <div class="w3-modal-content w3-blue-gray w3-card-2 w3-animate-top"  style="width: 300px; height: 320px;">
+            <div class="imgcontainer w3-center w3-padding-24">
+                <span onclick="document.getElementById('loginModal').style.display='none'" class="w3-button w3-display-topright">×</span>
+
+                <img src="http://downloadicons.net/sites/default/files/user-login-icon-32267.png" alt="Avatar" class="avatar" style="width:100px;height:100px;">
+              </div>
+    <h2>Login</h2>
+    <div style="text-align:right; padding-right: 15px">
+		<form name="form" (ngSubmit)="f.form.valid && login()" #f="ngForm" novalidate >
+			<div class="login form-group" [ngClass]="{ 'has-error': f.submitted && !username.valid }">
+				<label for="username">Username</label>
+				<input type="text" class="form-control" name="username" [(ngModel)]="model.username" #username="ngModel" required />
+				<div *ngIf="f.submitted && !username.valid" class="help-block">Username is required</div>
+			</div>
+			<div class="login form-group" [ngClass]="{ 'has-error': f.submitted && !password.valid }">
+				<label for="password">Password</label>
+				<input type="password" class="form-control" name="password" [(ngModel)]="model.password" #password="ngModel" required />
+				<div *ngIf="f.submitted && !password.valid" class="help-block">Password is required</div>
+      </div>
+			<div class="w3-center login form-group" >
+				<button [disabled]="loading" class="button" style="vertical-align:middle">Login</button>
+				<img *ngIf="loading" src="data:image/gif;base64,R0lGODlhEAAQAPIAAP///wAAAMLCwkJCQgAAAGJiYoKCgpKSkiH/C05FVFNDQVBFMi4wAwEAAAAh/hpDcmVhdGVkIHdpdGggYWpheGxvYWQuaW5mbwAh+QQJCgAAACwAAAAAEAAQAAADMwi63P4wyklrE2MIOggZnAdOmGYJRbExwroUmcG2LmDEwnHQLVsYOd2mBzkYDAdKa+dIAAAh+QQJCgAAACwAAAAAEAAQAAADNAi63P5OjCEgG4QMu7DmikRxQlFUYDEZIGBMRVsaqHwctXXf7WEYB4Ag1xjihkMZsiUkKhIAIfkECQoAAAAsAAAAABAAEAAAAzYIujIjK8pByJDMlFYvBoVjHA70GU7xSUJhmKtwHPAKzLO9HMaoKwJZ7Rf8AYPDDzKpZBqfvwQAIfkECQoAAAAsAAAAABAAEAAAAzMIumIlK8oyhpHsnFZfhYumCYUhDAQxRIdhHBGqRoKw0R8DYlJd8z0fMDgsGo/IpHI5TAAAIfkECQoAAAAsAAAAABAAEAAAAzIIunInK0rnZBTwGPNMgQwmdsNgXGJUlIWEuR5oWUIpz8pAEAMe6TwfwyYsGo/IpFKSAAAh+QQJCgAAACwAAAAAEAAQAAADMwi6IMKQORfjdOe82p4wGccc4CEuQradylesojEMBgsUc2G7sDX3lQGBMLAJibufbSlKAAAh+QQJCgAAACwAAAAAEAAQAAADMgi63P7wCRHZnFVdmgHu2nFwlWCI3WGc3TSWhUFGxTAUkGCbtgENBMJAEJsxgMLWzpEAACH5BAkKAAAALAAAAAAQABAAAAMyCLrc/jDKSatlQtScKdceCAjDII7HcQ4EMTCpyrCuUBjCYRgHVtqlAiB1YhiCnlsRkAAAOwAAAAAAAAAAAA==" />
+				<a [routerLink]="['/register']" class="btn btn-link" >Register</a>
+			</div>
+    </form>
+  </div>
+    </div>
+  </div>
+  </div>
+  </div>
+
+
