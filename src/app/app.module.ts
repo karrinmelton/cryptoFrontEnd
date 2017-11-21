@@ -5,7 +5,7 @@ import { HttpModule } from '@angular/http';
 import { MockBackend, MockConnection } from '@angular/http/testing';
 import { BaseRequestOptions } from '@angular/http';
 import { RouterModule, Routes} from '@angular/router';
-import { SettingsComponent } from './settings/settings.component';
+// import { SettingsComponent } from './settings/settings.component';
 import { CurrentCryptosComponent } from './current-cryptos/current-cryptos.component';
 import { fakeBackendProvider } from './_helpers/index';
 import { AppComponent }  from './app.component';
@@ -22,7 +22,7 @@ import { HomeComponent } from './home/index';
 import { LoginComponent } from './login/index';
 import { RegisterComponent } from './register/index';
 import { ContactComponent } from './contact/contact.component';
-import { ChatbotComponent } from './chatbot/chatbot.component';
+// import { ChatbotComponent } from './chatbot/chatbot.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { DateObjComponent } from './date-obj/date-obj.component';
 
@@ -30,12 +30,12 @@ import { DateObjComponent } from './date-obj/date-obj.component';
 import { UsersService } from './user/users.service';
 import { ThreadsService } from './thread/threads.service';
 import { MessagesService } from './message/messages.service';
-import { ChatMessageComponent } from './chat-message/chat-message.component';
-import { ChatThreadComponent } from './chat-thread/chat-thread.component';
+// import { ChatMessageComponent } from './chat-message/chat-message.component';
+// import { ChatThreadComponent } from './chat-thread/chat-thread.component';
 import { ChatNavBarComponent } from './chat-nav-bar/chat-nav-bar.component';
-import { ChatThreadsComponent } from './chat-threads/chat-threads.component';
-import { ChatWindowComponent } from './chat-window/chat-window.component';
-import { ChatPageComponent } from './chat-page/chat-page.component';
+// import { ChatThreadsComponent } from './chat-threads/chat-threads.component';
+// import { ChatWindowComponent } from './chat-window/chat-window.component';
+// import { ChatPageComponent } from './chat-page/chat-page.component';
 import { FromNowPipe } from './pipes/from-now.pipe';
 
 
@@ -45,10 +45,10 @@ import { FromNowPipe } from './pipes/from-now.pipe';
 const navRoutes: Routes = [
     {path: 'user-profile', component: UserProfileComponent},
     {path: 'home', component: HomeComponent},
-    {path: 'settings', component: SettingsComponent},
+    // {path: 'settings', component: SettingsComponent},
     {path: 'contact', component: ContactComponent},
     {path: 'current-cryptos', component: CurrentCryptosComponent},
-    {path: 'chatbot', component: ChatbotComponent},
+    // {path: 'chatbot', component: ChatbotComponent},
     // { path: '**', component: PageNotFoundComponent }
   ]
 
@@ -70,20 +70,20 @@ const navRoutes: Routes = [
         RegisterComponent,
         ContactComponent,
         UserInfoComponent,
-        ChatbotComponent,
+        // ChatbotComponent,
         NavbarComponent,
         DateObjComponent,
         LoginComponent,
         UserProfileComponent,
-        SettingsComponent,
+        // SettingsComponent,
         CurrentCryptosComponent,
         // Textbook chatbot declarations
-        ChatMessageComponent,
-        ChatThreadComponent,
+        // ChatMessageComponent,
+        // ChatThreadComponent,
         ChatNavBarComponent,
-        ChatThreadsComponent,
-        ChatWindowComponent,
-        ChatPageComponent,
+        // ChatThreadsComponent,
+        // ChatWindowComponent,
+        // ChatPageComponent,
         FromNowPipe
     ],
     providers: [
