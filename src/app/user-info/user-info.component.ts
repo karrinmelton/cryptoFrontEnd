@@ -23,7 +23,7 @@ export class UserInfoComponent implements OnInit {
   model: any = {};
   loading = false;
  
-  items = ['https://image.flaticon.com/sprites/new_packs/145841-avatar-set.png', 'https://cdn.dribbble.com/users/124355/screenshots/2199042/profile_1x.png', 'https://maxcdn.icons8.com/windows10/PNG/512/User_Interface/cat_profile-512.png']
+  items = ['https://image.flaticon.com/sprites/new_packs/145841-avatar-set.png', 'https://cdn.dribbble.com/users/124355/screenshots/2199042/profile_1x.png', 'https://maxcdn.icons8.com/windows10/PNG/512/User_Interface/cat_profile-512.png','https://lh3.googleusercontent.com/B4Rmc8NPG7fHIGmN65214ppzNGHNa_wuLSSJ6Dz85KJoZ0zlBFnpH16pOJBHpwA0fCs=w300']
 
   imgSrc : string = this.items[1];
 
@@ -36,7 +36,10 @@ export class UserInfoComponent implements OnInit {
       return this.imgSrc = this.items[1]
     } else if (this.imgSrc == this.items[1]){
       return this.imgSrc = this.items[2]
-    }else{
+    } else if (this.imgSrc == this.items[2]){
+      return this.imgSrc = this.items[3]
+    }
+    else{
       return this.imgSrc = this.items[0]
     }
   }
