@@ -22,8 +22,23 @@ export class UserInfoComponent implements OnInit {
   users: any[] = JSON.parse(localStorage.getItem('users'))
   model: any = {};
   loading = false;
+ 
+  items = ['https://image.flaticon.com/sprites/new_packs/145841-avatar-set.png', 'https://cdn.dribbble.com/users/124355/screenshots/2199042/profile_1x.png', 'https://maxcdn.icons8.com/windows10/PNG/512/User_Interface/cat_profile-512.png']
+
+  imgSrc : string = this.items[1];
+
   constructor(private userService: UserService,private router: Router,private alertService: AlertService) {
       this.currentUser = JSON.parse(localStorage.getItem('currentUser'));
+  }
+
+  changePhoto(){
+    if (this.imgSrc == this.items[0]){
+      return this.imgSrc = this.items[1]
+    } else if (this.imgSrc == this.items[1]){
+      return this.imgSrc = this.items[2]
+    }else{
+      return this.imgSrc = this.items[0]
+    }
   }
 
   save() {
@@ -44,4 +59,5 @@ export class UserInfoComponent implements OnInit {
   private loadAllUsers() {
       this.userService.getAll().subscribe(users => { this.users = users; });
   }
+
 }
