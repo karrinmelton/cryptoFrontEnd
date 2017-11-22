@@ -44,21 +44,40 @@ Please respond to the chatbot using the following transcript step-by-step as the
 (The bot will begin by greeting the user)
 
 Bot: Hello, my name is Juliet.
+
 User: Hi
+
 Bot: (Bot responds...)
+
 User: What is a cryptocurrency?
+
 Bot: (Bot responds...)
+
 User: What is a Blockchain?
+
 Bot: (Bot responds...)
+
 User: What about security?
+
 Bot: (Bot responds...)
+
 Who came up with the idea of a blockchain?
+
 Bot: (Bot responds...)
+
 Could a user get away with double spending?
+
 Bot: (Bot responds...)
+
 What other cryptocurrencies are there?
+
 Bot: (Bot responds...)
+
 Are there any online exchanges to trade these cryptocurrencies?
+
 Bot: (Bot responds...)
+
 Where can I go to find out the value of each cryptocurrency?
+
 Bot: (Bot responds...)
+
