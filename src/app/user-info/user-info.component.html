@@ -25,17 +25,14 @@
     <br>
     <br>
     <div class="form-group">
-      <button class="btn btn-Danger" (click) = save() > Save </button> 
-
-      <!--<button [routerLink]="['/login']" class="btn btn-link">Cancel</button>-->
+     
   </div>
   </div>
-<!-- {{cuser}} -->
 
-<li *ngFor="let user of users">
 
-    {{currentUser.firstName}}
+<div *ngFor="let user of users">
+
         <button class="w3-button" (click)="updateUser(user.id)">Update</button>
-        {{currentUser.firstName}}
-    </li>
+        
+</div>
 </html>

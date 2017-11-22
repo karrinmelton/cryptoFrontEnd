@@ -67,11 +67,11 @@ export class UserInfoComponent implements OnInit {
 
   updateUser(id:number){
     this.currentUser.firstName = "First Name";
-    // this.cuser = JSON.parse(localStorage.getItem(JSON.stringify(this.currentUser)))
-    // this.currentUser.firstName = localStorage.setItem('firstName', 'First Name')
-    // this.currentUser.localStorage.setItem("firstName", JSON.stringify("Muthu"))
+    this.currentUser.lastName = "Last Name";
+    this.currentUser.email = "Email";
+    this.currentUser.city = "City";
+    this.currentUser.state = "State";
 
-    // localStorage.setItem('firstName', 'Hi')
 
   }
 
