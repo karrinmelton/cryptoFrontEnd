@@ -1,20 +1,4 @@
-<!-- <!DOCTYPE html>
-<html>
-<title>W3.CSS Template</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
 
- <div class="w3-padding-10">
-Trying to find something for editing profile image
-    <image-upload
-    [max]="100"
-    [url]="'http://myurl'"
-    [buttonCaption]="'Select Images!'"
-    [dropBoxMessage]="'Drop your images here!'"
-></image-upload> -->
 <!DOCTYPE html>
 <html>
 
@@ -25,14 +9,11 @@ Trying to find something for editing profile image
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
 
  <div class="w3-padding-10">
-        <!-- <div *ngFor="let item of items" > -->
+
          
             <button class="w3-button" (click) = "changePhoto()"> Change Photo </button>
             <img  width="100px" src={{imgSrc}}>
 
-                <!-- {{item}} -->
-              <!-- </div> -->
-   <!-- <img src="https://lh3.googleusercontent.com/B4Rmc8NPG7fHIGmN65214ppzNGHNa_wuLSSJ6Dz85KJoZ0zlBFnpH16pOJBHpwA0fCs=w300" alt="Person" style="height:10% ;width:10%;">-->  
     <h1>{{currentUser.username}}</h1>
     <input placeholder="Username" [(ngModel)]="currentUser.username"/> 
     <h2>{{currentUser.firstName}} {{currentUser.lastName}}</h2>
@@ -45,7 +26,16 @@ Trying to find something for editing profile image
     <br>
     <div class="form-group">
       <button class="btn btn-Danger" (click) = save() > Save </button> 
+
       <!--<button [routerLink]="['/login']" class="btn btn-link">Cancel</button>-->
   </div>
   </div>
+<!-- {{cuser}} -->
+
+<li *ngFor="let user of users">
+
+    {{currentUser.firstName}}
+        <button class="w3-button" (click)="updateUser(user.id)">Update</button>
+        {{currentUser.firstName}}
+    </li>
 </html>

@@ -5,6 +5,7 @@ import { User } from '../_models/index';
 import { fakeBackendProvider } from '../_helpers/index';
 import { Http, BaseRequestOptions, Response, ResponseOptions, RequestMethod } from '@angular/http';
 import { MockBackend, MockConnection } from '@angular/http/testing';
+import { Input } from '@angular/core/src/metadata/directives';
 
 
 @Component({
@@ -22,6 +23,7 @@ export class UserInfoComponent implements OnInit {
   users: any[] = JSON.parse(localStorage.getItem('users'))
   model: any = {};
   loading = false;
+  cuser: any;
  
   items = ['https://image.flaticon.com/sprites/new_packs/145841-avatar-set.png', 'https://cdn.dribbble.com/users/124355/screenshots/2199042/profile_1x.png', 'https://maxcdn.icons8.com/windows10/PNG/512/User_Interface/cat_profile-512.png','https://lh3.googleusercontent.com/B4Rmc8NPG7fHIGmN65214ppzNGHNa_wuLSSJ6Dz85KJoZ0zlBFnpH16pOJBHpwA0fCs=w300']
 
@@ -61,6 +63,16 @@ export class UserInfoComponent implements OnInit {
 
   private loadAllUsers() {
       this.userService.getAll().subscribe(users => { this.users = users; });
+  }
+
+  updateUser(id:number){
+    this.currentUser.firstName = "First Name";
+    // this.cuser = JSON.parse(localStorage.getItem(JSON.stringify(this.currentUser)))
+    // this.currentUser.firstName = localStorage.setItem('firstName', 'First Name')
+    // this.currentUser.localStorage.setItem("firstName", JSON.stringify("Muthu"))
+
+    // localStorage.setItem('firstName', 'Hi')
+
   }
 
 }
